@@ -2,6 +2,11 @@
 layout:           default
 ---
 
+{% include header.html %}
 <div id="content">
     {{ content }}
+    {% include article-footer.html %}
+</div>
+<div class="comment">
+    % include comments.html %}
 </div>
