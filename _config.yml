@@ -4,3 +4,7 @@ title: Oath Keeper
 url: https://hlsc.github.io
 feed: /atom.xml
 author_info: <a href="hlsc.github.io">Oath Keeper</a>
+
+analytics:
+    baidu:
+        siteid: 0b065c3d5957a5bbf8e6961f2097ea40 
