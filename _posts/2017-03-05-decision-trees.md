@@ -55,9 +55,9 @@ description:  决策树算法也是十大经典算法之一，基本每一本机
 　　输入：训练数据集D和特征A  
 　　输出：特征A对训练数据集D的信息增益g(D,A)  
 (1)计算数据集D的经验熵H(D)
-\\[H(D)=-\sum_{k=1}^{K}\frac{|C_{k}|}{D}log_{2}\frac{|C_{k}|}{D}\\]
+\\[H(D)=-\sum_{k=1}^{K}\frac{|C_{k}|}{|D|}log_{2}\frac{|C_{k}|}{|D|}\\]
 (2)计算特征A对数据集D的经验条件熵H(D|A)  
-\\[H(D|A)=\sum_{i=1}^{n}\frac{|D_{i}|}{D}H(D_{i})=-\sum_{i=1}^{n}\frac{|D_{i}|}{D}\sum_{k=1}^{K}\frac{D_{ik}}{D_{i}}log_{2}\frac{D_{ik}}{D_{i}}\\]
+\\[H(D|A)=\sum_{i=1}^{n}\frac{|D_{i}|}{|D|}H(D_{i})=-\sum_{i=1}^{n}\frac{|D_{i}|}{|D|}\sum_{k=1}^{K}\frac{|D_{ik}|}{|D_{i}|}log_{2}\frac{|D_{ik}|}{|D_{i}|}\\]
 (3)计算信息增益  
 \\[g(D,A)=H(D)-H(D|A)\\]
 
